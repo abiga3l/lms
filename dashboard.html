@@ -1,33 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
-</head>
-<body>
-    <header>
-        <h1>Welcome to Your Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="/leaderboard">Leaderboard</a></li>
-                <li><a href="/course-content">Course Content</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="welcome-message">
-            <h2>Hello, <span id="user-fullname"></span>!</h2>
-            <p>Welcome to your personalized dashboard.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your LMS</p>
-    </footer>
-
-    <!-- Include your client-side JavaScript file -->
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <style>
+            body{
+                background-color: teal;
+            }
+            .progress-circle {
+                width:85px;
+                height:85px;
+                background-color: darkgrey;
+                border-radius:75%;
+                display:flex;
+                align-self: center;
+                justify-content:center;
+                font-weight:bold;
+            }
+            .courses li {
+                text-align:center;
+            }
+            .courses .course-title{
+                font-size:20px;
+                margin-bottom:5px;
+            }
+            .courses .instructor {
+                color:blue;
+                text-decoration: underline;
+            }
+            .courses .dates{
+                font-weight:bold;
+            }
+            .profile{
+                margin-top:20px;
+            }
+            .profile h2{
+                text-align:center;
+            }
+            .personal-info{
+                margin-top:10px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dashboard">
+        <h1>Welcome to the dashboard.</h1>
+        <h2>Courses</h2>
+        <ul class="courses">
+            <li>
+            <span class="course-title">Introduction to HTML</span>
+            <br>
+            <span class="instructor">Instructor:<span style="color:blue;text-decoration: underline;">Mr Gerald</span></span>
+            <br>
+            <span class="dates"><strong>Start date:</strong>3/6/2024 -<strong>End date:</strong>15/7/2024</span>
+            <br>
+            <span class="progress-circle">50%</span>
+            <br>
+            <span class="status">Completion:In progress</span>
+            <br>
+            <a href="https://www.tutorialspoint.com/html/html_tutorial.pdf">Access Course materials</a>
+            <br>
+            <span class="announcement">Anouncemet:Make sure you finish this course assignments by 2/7/2024</span>
+            </li>
+            <li>
+                <span class="course-title">Css Fundamentals</span>
+                <br>
+                <span class="instructor">Instructor:<span style="color:blue;text-decoration: underline;">Mrs Joy</span></span>
+                <br>
+                <span class="dates"><strong>Start date:</strong>10/6/2024 -<strong> End date:</strong>24/7/2024</span>
+                <br>
+                <span class="progress-circle">50%</span>
+                <br>
+                <span class="status">Completion:In progress</span>
+                <br>
+                <a href="https://www.tutorialspoint.com/css/css_tutorial.pdf">Access Course materials</a>
+                <br>
+                <span class="announcement">Anouncemet:Make sure you finish this course assignments by 20/7/2024</span>
+                </li>
+                <li>
+                    <span class="course-title">JavaScript Basis</span>
+                    <br>
+                    <span class="instructor">Instructor:<span style="color:blue;text-decoration: underline;">Mrs Macharia</span></span>
+                    <br>
+                    <span class="dates"><strong>Start date:</strong>25/6/2024 - <strong>End date:</strong>10/8/2024</span>
+                    <br>
+                    <span class="progress-circle">50%</span>
+                    <br>
+                    <span class="status">Completion:In progress</span>
+                    <br>
+                    <a href="https://www.tutorialspoint.com/javascript/javascript_tutorial.pdf">Access Course materials</a>
+                    <br>
+                    <span class="announcement">Anouncemet:Make sure you finish this course assignments by 2/8/2024</span>
+                    </li>
+                    <li>
+                        <span class="course-title">Web project management</span>
+                        <br>
+                        <span class="instructor">Instructor:<span style="color:blue;text-decoration: underline;">Mr Wekesa</span></span>
+                        <br>
+                        <span class="dates"><strong>Start date:</strong>1/7/2024 - <strong>End date:</strong>25/8/2024</span>
+                        <br>
+                        <span class="progress-circle">50%</span>
+                        <br>
+                        <span class="status">Completion:In progress</span>
+                        <br>
+                        <a href="https://core.ac.uk/download/pdf/38008713.pdf">Access Course materials</a>
+                        <br>
+                        <span class="announcement">Anouncemet:Make sure you finish this course assignments by 18/8/2024</span>
+                        </li>
+        </ul> 
+        <div class="profile">
+            <h2>Your Profile</h2>
+            <div class="personal-info">                       
+                <h3>Personal Information:</h3>
+                <input type="file" accept="image/*" id="profile-pic" name="profile-pic">
+                <br>
+                <br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="date of birth" required>
+                <br>
+                <br>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+                <br>
+                <br>
+                <label for="interest">Interest</label>
+                <input type="text" id="interest" name="interest" required>
+                <br>
+                <br>
+                <label for="telephone">Telephone</label>
+                <input type="tel" id="telephone" name="telephone" required>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>

@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Leaderboard</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/course-content">Course Content</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </nav>
-    </header>
-    <main id="leaderboard">
-        <!-- Leaderboard data will be dynamically populated here -->
-    </main>
-    <footer>
-        <p>&copy; 2024 Your LMS</p>
-    </footer>
-
-    <!-- Include your client-side JavaScript file -->
-    <script src="script.js"></script>
-</body>
+    <body>
+        <div class="Leaderboard">
+            <h1>Leaderboard</h1>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Scores</th>
+                    <th>Virtal prize</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                </tbody>
+            </table>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
 </html>

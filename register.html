@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charst="UTF-8">
+        <meta charset="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;}
+    .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    h2 {
+    text-align: center;
+}
+    form {
+    margin-top: 20px;
+}
+    label {
+    display: block;
+    margin-bottom: 5px;
+}
+    input[type="text"],input[type="email"],input[type="password"],button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+    button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+    button:hover {
+    background-color: #0056b3;
+}
+    #showPasswordCheckbox {
+    margin-left: 5px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h2>User Registration</h2>
+        <form action="register.php" method="post">
+            <label for="first name">First Name</label>
+            <input type="text" name="first name" id="first name" required>
+            <br><br>
+            <label for="last name">Last Name</lSabel>
+            <input type="text" name="last name" id="last name" required>
+            <br><br>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+            <br><br>
+            <label for="email address">Email</label>
+            <input type="email" name="email address" id="email address" required>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <input type="checkbox" id="showPasswordCheckbox" onclick="togglePasswordVisibility()">
+            <script>
+            function togglePasswordVisibility() {
+                 var passwordField = document.getElementById("passwordField");
+                 var showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+                 if (showPasswordCheckbox.checked) {
+                    passwordField.type = "text";
+                 } else {
+                    passwordField.type = "password";
+                 }
+            }
+            </script>
+            <br><br>
+            <button type="submit">Register</button>
+        </div>
+        </form>
+    </body>
+</html>

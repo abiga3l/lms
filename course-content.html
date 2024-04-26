@@ -1,30 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Content</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
-</head>
-<body>
-    <header>
-        <h1 id="course-name">Course Name</h1>
-        <nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Content</title>
+        <style>
+            
+          body {
+             font-family:Arial, Helvetica, sans-serif ;
+              line-height : 1.8;
+              margin: 0;
+              padding:0;
+              background-color: aliceblue;
+            }
+            .container {
+                max-width:800px;
+                 margin:0 auto;
+                  padding:20px;
+                }
+                ul {
+                     list-style-type:none;
+                     padding: 5px;
+                    }
+                    h1,h2,h3,h4,h5,h6 {
+                        font-family:'Times New Roman', Times, serif ;
+                         margin-top:20px;
+                         margin-bottom:10px;
+                         font-size: x-large;
+                         text-align: center;
+                         font-weight:bold;
+                         text-decoration:underline;
+                        }
+                        p { 
+                            margin:15px 0;
+                            text-align:start;
+                        }
+                        .content {
+                             margin-top:20px;
+                            }
+                            .content h6 {
+                                margin-top:20px;
+                            }
+                            .content ul {
+                                margin:10px 0;
+                            }
+                            .content ul li {
+                                 margin-bottom:5px;
+                                 padding:5px;
+                                }
+                                .content ul li a {
+                                    text-decoration:none;
+                                    color:blue;
+                                }
+                                .content ul li a:hover {
+                                    text-decoration:underline; 
+                                 }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to our app</h1>
+        <p>These are the courses that are offered;</p>
+        <ul>
+            <li>Introduction to HTML</li>
+            <li>CSS Fundamentals</li>
+            <li>JavaScript Basics</li>
+            <li>Web Project Management</li>
+        </ul> 
+        <h2>Introduction to HTML</h2>
+        <p>Introduction to HTML is designed to provide learners with a comprehensive understanding of Hypertext Markup Language (HTML). Throughout the course, students will embark on a journey into the world of web development, starting with the basics of HTML syntax, tags, and elements. From structuring content to creating links and embedding media, learners will gain hands-on experience in crafting well-formed HTML documents. There will be practical exercises and demonstrations. The course has quizzes and assignments where the learner needs to complete to see their progress and understanding. Throughout the course, emphasis will be placed on fostering a supportive learning environment where learners feel empowered to experiment and ask questions, hence expanding their HTML proficiency at their own pace.</p>
+        <p>The instructor for this course is MR. GERALD</p>
+        <h3>CSS Fundamentals</h3>
+        <p>The CSS Fundamentals is designed to equip learners with the essential skills needed to style and design modern web pages using Cascading Style Sheets (CSS). The learners will learn how to apply styles to HTML elements to control aspects such as layout, typography, colors, and effects. Through hands-on exercises and projects, learners will gain practical experience in creating visually appealing and responsive web designs. By the end of the course, participants will have the proficiency to transform basic HTML documents into professionally styled web pages, setting the foundation for advanced front-end development skills.</p>
+        <p>The instructor is MRS. JOY</p>
+        <h4>JavaScript Basics</h4>
+        <p>The JavaScript Basics course offers a comprehensive introduction to the fundamental concepts of the JavaScript programming language. Participants will explore the core syntax, data types, variables, and operators essential for building interactive and dynamic web applications. Through practical examples and exercises, learners will understand how to manipulate the Document Object Model (DOM) to dynamically update and modify HTML and CSS content. Additionally, the course will cover essential programming concepts such as control structures (e.g., loops, conditionals), functions, and event handling to enhance interactivity and user experience. By mastering the basics of JavaScript, participants will lay a solid foundation for further exploration into front-end and full-stack web development.</p>
+        <p>The instructor is MS. MACHARIA</p>
+        <h5>Web Project Management</h5>
+        <p>The Web Project Management course provides learners with the knowledge and skills necessary to effectively plan, execute, and oversee web development projects. Participants will learn about project management methodologies, tools, and techniques tailored specifically for the dynamic environment of web development. Topics covered may include project initiation, scope definition, task scheduling, resource allocation, risk management, and quality assurance. Through case studies and real-world scenarios, learners will gain insights into managing various aspects of web projects, including collaboration with cross-functional teams, client communication, and stakeholder engagement. By the end of the course, participants will be equipped with the strategies and best practices needed to lead successful web development projects from inception to completion.</p>
+        <p>The instructor is MR. WEKESA</p>
+        <div class="content">
+            <h6>Notes</h6>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/course-content">Course Content</a></li>
-                <!-- Add more navigation links as needed -->
+                <li><a href="https://www.tutorialspoint.com/html/html_tutorial.pdf">Introduction to HTML</a></li>
+                <li><a href="https://www.tutorialspoint.com/css/css_tutorial.pdf">CSS Fundamentals</a></li>
+                <li><a href="https://www.tutorialspoint.com/javascript/javascript_tutorial.pdf">JavaScript Basics</a></li>
+                <li><a href="https://core.ac.uk/download/pdf/38008713.pdf">Web Project Management</a></li>
             </ul>
-        </nav>
-    </header>
-    <main id="course-content">
-        <!-- Course content will be dynamically populated here -->
-    </main>
-    <footer>
-        <p>&copy; 2024 Your LMS</p>
-    </footer>
-
-    <!-- Include your client-side JavaScript file -->
-    <script src="script.js"></script>
-</body>
+        </div>
+    </body>
 </html>
